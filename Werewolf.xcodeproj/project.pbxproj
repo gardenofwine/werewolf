@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B204457F170C6C8900E30192 /* WWMorningState.m in Sources */ = {isa = PBXBuildFile; fileRef = B204457E170C6C8900E30192 /* WWMorningState.m */; };
+		B2044582170C6F2F00E30192 /* WWStateMachine.m in Sources */ = {isa = PBXBuildFile; fileRef = B2044581170C6F2F00E30192 /* WWStateMachine.m */; };
 		FE6FD37E16E797DD008CAE3C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE6FD37D16E797DD008CAE3C /* UIKit.framework */; };
 		FE6FD38016E797DD008CAE3C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE6FD37F16E797DD008CAE3C /* Foundation.framework */; };
 		FE6FD38216E797DD008CAE3C /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE6FD38116E797DD008CAE3C /* CoreGraphics.framework */; };
@@ -23,6 +25,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B204457A170C695300E30192 /* WWState.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = WWState.h; path = StateMachine/WWState.h; sourceTree = "<group>"; };
+		B204457D170C6C8900E30192 /* WWMorningState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WWMorningState.h; path = StateMachine/WWMorningState.h; sourceTree = "<group>"; };
+		B204457E170C6C8900E30192 /* WWMorningState.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WWMorningState.m; path = StateMachine/WWMorningState.m; sourceTree = "<group>"; };
+		B2044580170C6F2F00E30192 /* WWStateMachine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WWStateMachine.h; path = StateMachine/WWStateMachine.h; sourceTree = "<group>"; };
+		B2044581170C6F2F00E30192 /* WWStateMachine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WWStateMachine.m; path = StateMachine/WWStateMachine.m; sourceTree = "<group>"; };
 		FE6FD37A16E797DD008CAE3C /* Werewolf.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Werewolf.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FE6FD37D16E797DD008CAE3C /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		FE6FD37F16E797DD008CAE3C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -58,6 +65,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B2044579170C690E00E30192 /* StateMachine */ = {
+			isa = PBXGroup;
+			children = (
+				B204457A170C695300E30192 /* WWState.h */,
+				B204457D170C6C8900E30192 /* WWMorningState.h */,
+				B204457E170C6C8900E30192 /* WWMorningState.m */,
+				B2044580170C6F2F00E30192 /* WWStateMachine.h */,
+				B2044581170C6F2F00E30192 /* WWStateMachine.m */,
+			);
+			name = StateMachine;
+			sourceTree = "<group>";
+		};
 		FE6FD37116E797DD008CAE3C = {
 			isa = PBXGroup;
 			children = (
@@ -89,6 +108,7 @@
 		FE6FD38316E797DD008CAE3C /* Werewolf */ = {
 			isa = PBXGroup;
 			children = (
+				B2044579170C690E00E30192 /* StateMachine */,
 				FE6FD38C16E797DD008CAE3C /* WWAppDelegate.h */,
 				FE6FD38D16E797DD008CAE3C /* WWAppDelegate.m */,
 				FE6FD3A516E799A9008CAE3C /* Controllers */,
@@ -201,6 +221,8 @@
 				FE6FD38A16E797DD008CAE3C /* main.m in Sources */,
 				FE6FD38E16E797DD008CAE3C /* WWAppDelegate.m in Sources */,
 				FE6FD39D16E797DD008CAE3C /* WWViewController.m in Sources */,
+				B204457F170C6C8900E30192 /* WWMorningState.m in Sources */,
+				B2044582170C6F2F00E30192 /* WWStateMachine.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -333,6 +355,7 @@
 				FE6FD3A216E797DD008CAE3C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

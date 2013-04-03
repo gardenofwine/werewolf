@@ -33,6 +33,9 @@
     self.peers = [NSMutableArray new];
     
     [self createConnectButton];
+    
+    // state machine methods
+//    [self createNoVoteButton];
 }
 
 - (void)createConnectButton

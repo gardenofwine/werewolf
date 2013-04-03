@@ -7,12 +7,22 @@
 //
 
 #import "WWAppDelegate.h"
+#import "WWStateMachine.h"
+#import "WWMorningState.h"
+
 
 @implementation WWAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Override point for customization after application launch.
+    WWStateMachine *stateMachine = [WWStateMachine new];
+    
+    WWMorningState *morningState = [[WWMorningState alloc] initWithStateMachine:stateMachine];
+    NSDictionary *states = [NSDictionary dictionaryWithObjectsAndKeys:morningState, morning, nil];
+    
+    stateMachine.states = states;
+    
     return YES;
 }
 							
